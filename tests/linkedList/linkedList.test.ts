@@ -7,12 +7,12 @@ describe('SingleLinkedList', () => {
     linkedList = new SingleLinkedList<number>();
   });
 
-  it('initial single linklist should be has size = 0 and empty', () => {
+  it('Initial single linklist should be has size = 0 and empty', () => {
     expect(linkedList.size()).toBe(0)
     expect(linkedList.isEmpty()).toBe(true)
   });
 
-  it('insert element at beginning', () => {
+  it('Insert element at beginning', () => {
     linkedList.insertAtBegin(1)
     expect(linkedList.isEmpty()).toBe(false)
     expect(linkedList.size()).toBe(1)
@@ -21,7 +21,7 @@ describe('SingleLinkedList', () => {
     expect(linkedList.traverse()).toEqual([2, 1])
   });
 
-  it('insert element at end', () => {
+  it('Insert element at end', () => {
     linkedList.insertAtLast(1)
     expect(linkedList.isEmpty()).toBe(false)
     expect(linkedList.size()).toBe(1)
@@ -30,7 +30,7 @@ describe('SingleLinkedList', () => {
     expect(linkedList.traverse()).toEqual([1, 2])
   });
 
-  it('insert element at index', () => {
+  it('Insert element at index', () => {
     linkedList.insertAtLast(1)
     linkedList.insertAtLast(2)
     linkedList.insertAtLast(3)
@@ -48,7 +48,7 @@ describe('SingleLinkedList', () => {
     expect(linkedList.traverse()).toEqual([-1,1,2,-4,3,-2,4,-3])
   });
 
-  it('insert element and delete', () => {
+  it('Insert element and delete', () => {
     linkedList.insertAtLast(1)
     linkedList.insertAtLast(2)
     linkedList.insertAtLast(3)
@@ -70,7 +70,7 @@ describe('SingleLinkedList', () => {
     expect(linkedList.traverse()).toEqual([2,-4,3,-2,4,-3])
   });
 
-  it('insert element and delete at begin', () => {
+  it('Insert element and delete at begin', () => {
     linkedList.insertAtLast(1)
     linkedList.insertAtLast(2)
     linkedList.insertAtLast(3)
@@ -101,7 +101,7 @@ describe('SingleLinkedList', () => {
     expect(linkedList.traverse()).toEqual([])
   });
 
-  it('insert element and delete at begin', () => {
+  it('Insert element and delete at begin', () => {
     linkedList.insertAtLast(1)
     linkedList.insertAtLast(2)
     linkedList.insertAtLast(3)
